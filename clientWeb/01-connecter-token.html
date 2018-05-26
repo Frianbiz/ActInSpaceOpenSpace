@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/03-connecter-token.css">
+    <link rel="stylesheet" href="style/ais.css">
+</head>
+<body>
+    <div class="container">
+        <div id="plug-key" class="plug-key">
+            <div class="illustration half">
+                <div class="illustration-container">
+                    <img src="img/computer.svg" class="computer">
+                    <img src="img/arrow.svg" class="arrow">
+                    <img src="img/token.svg" class="token">
+                </div>
+            </div>
+            <div class="message half">
+                <h1>
+                    Valider votre paiement
+                </h1>
+                <p>
+                    Pour valider votre paiement, connectez votre clef GeoDS à votre terminal
+                </p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="validation-button" class="button-bottom" onclick="changePage();">C'est fait</button>
+        </div>
+    </div>
+
+    <script>
+        function changePage() {
+
+            var container = document.getElementById("plug-key");
+            container.classList.add("hide");
+            var button = document.getElementById("validation-button");
+            button.classList.add("hide");
+            setTimeout(function(){ location.href='04-verification.html'; }, 490);
+        }
+    </script>
+</body>
+</html>

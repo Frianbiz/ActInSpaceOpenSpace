@@ -1,0 +1,122 @@
+.message {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.computer {
+    height: 100%;
+}
+
+.plug-key {
+    display: flex;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    animation-name: plugKeyContainerShow;
+    animation-timing-function: ease-in; /*cubic-bezier(0.5, 1, 0.25, 1);*/
+    animation-duration: 0.5s;
+}
+
+.button-container {
+    width: 100%;
+    margin-top: -30px;
+    text-align: center;
+}
+button.button-bottom {
+    color: white;
+    font-size: 24px;
+    height: 60px;
+    width: 240px;
+    background: #C2E4AA;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    border-radius: 2px;
+    animation-name: buttonShow;
+    animation-timing-function: ease-in; /*cubic-bezier(0.5, 1, 0.25, 1);*/
+    animation-duration: 0.5s;
+}
+
+button.button-bottom.hide {
+    animation-timing-function: ease-in; /*cubic-bezier(0.5, 1, 0.25, 1);*/
+    animation-name: buttonHide;
+    animation-duration: 0.5s;
+}
+
+.plug-key.hide {
+    animation-name: plugKeyContainerHide;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in; /*cubic-bezier(0.5, 1, 0.25, 1);*/
+}
+
+.illustration {
+    height: 100%;
+    display: flex;
+}
+.illustration-container {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.computer {
+    z-index: 300;
+    width: 240px;
+}
+.arrow {
+    z-index: 100;
+    width: 32px;
+    margin-bottom: 4px;
+}
+.token {
+    z-index: 200;
+    width: 56px;
+    margin-left: 0px;
+    animation-delay: 2.5s;
+    animation-name: toLeft;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes toLeft {
+    from {margin-left: 0px;}
+    to {margin-left: -51px;}
+}
+
+@keyframes buttonShow {
+    from {
+        margin-top: 30px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes buttonHide {
+    from {
+        margin-top: 0px;
+        opacity: 1;
+    }
+    to {
+        margin-top: 30px;
+        opacity: 0;
+    }
+}
+
+@keyframes plugKeyContainerShow {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes plugKeyContainerHide {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}

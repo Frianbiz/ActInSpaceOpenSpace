@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/04-verification.css">
+    <link rel="stylesheet" href="style/ais.css">
+</head>
+<body>
+
+<div class="container">
+</div>
+<div id="loader" class="loader">
+    <img id='earth' class="earth" src="img/earth.svg">
+    <img id="satellite" class="satellite" src="img/satellite.svg">
+</div>
+<div id="load-message" class="load-message">
+    Traitement de votre paiement en cours…
+</div>
+<script>
+    var finalSatHeight = document.getElementById('satellite').height;
+
+    setInterval(() => {
+        var sat = document.getElementById('satellite');
+        var earth = document.getElementById('earth');
+        sat.style.left = (Math.sin(Date.now() / 1000) + 1 / 2) * (earth.height / 2 - finalSatHeight / 6) + finalSatHeight / 1.5 + 'px';
+        sat.style.top = (Math.sin(Date.now() / 1000) + 1 / 2) * (earth.height / 2 - finalSatHeight / 6)  + finalSatHeight / 1.5 + 'px';
+
+        sat.style.transform = 'scale(' + Math.cos(Date.now() / 2000) * 1.1 + ')';
+        sat.style.zIndex = Math.floor(1000 + Math.cos(Date.now() / 1000) * 10);
+    }, 1000 / 60);
+
+    function nextPageAfterTime() {
+        setTimeout(function(){
+            showNextPage();
+        }, 5000);
+    }
+
+    function showNextPage() {
+        var loader = document.getElementById("loader");
+        loader.classList.add("hide");
+
+        var earth = document.getElementById("earth");
+        earth.classList.add("hide");
+        var satellite = document.getElementById("satellite");
+        satellite.classList.add("hide");
+        var loadMessage = document.getElementById("load-message");
+        loadMessage.classList.add("hide");
+
+        setTimeout(function(){ location.href='05-succes.html'; }, 500);
+    }
+    nextPageAfterTime();
+
+</script>
+</body>
+</html>

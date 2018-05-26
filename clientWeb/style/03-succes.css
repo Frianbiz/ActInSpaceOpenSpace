@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+}
+.success-check {
+    margin: auto;
+    border-radius: 50%;
+    height:200px;
+    width:200px;
+    left: calc(50% - 100px);
+    border: #C2E4AA solid 4px;
+}
+.check {
+    border-top: #C2E4AA solid 4px;
+    border-right: #C2E4AA solid 4px;
+    transform: scaleX(-1) rotate(135deg);
+    width: 0px;
+    height: 0px;
+    height: 108px;
+    width: 61px;
+    margin: 28px 67px auto auto;
+    animation-name: showCheck;
+    animation: showCheck 0.5s forwards;
+    -webkit-animation: showCheck 0.5s forwards; /* for less modern browsers */
+    animation-timing-function: ease-in; /*cubic-bezier(0.5, 1, 0.25, 1);*/
+}
+
+.load-message {
+    position: absolute;
+    bottom: 23%;
+    width: 100%;
+    text-align: center;
+    animation: showMessage 0.5s forwards;
+}
+
+
+@keyframes showCheck {
+    0% {
+        border-top: transparent solid 4px;
+        border-right: transparent solid 4px;
+    }
+    100% {
+        border-top: #C2E4AA solid 4px;
+        border-right: #C2E4AA solid 4px;
+    }
+}
+
+@keyframes showMessage {
+    0% {
+        bottom: 23%;
+        opacity: 0;
+    }
+    100% {
+        bottom: 25%;
+        opacity: 1;
+    }
+}
