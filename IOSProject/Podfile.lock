@@ -1,12 +1,18 @@
 PODS:
+  - M13Checkbox (3.2.2)
   - Mapbox-iOS-SDK (4.0.1)
+  - TransitionButton (0.4.0)
 
 DEPENDENCIES:
+  - M13Checkbox
   - Mapbox-iOS-SDK (~> 4.0)
+  - TransitionButton
 
 SPEC CHECKSUMS:
+  M13Checkbox: a8c2491cfbbca10797925fd0b9154a782bf40d89
   Mapbox-iOS-SDK: 09b978be732d753e5c5e2911460fc0a018ce9be6
+  TransitionButton: d271030914c84a00b54b4d983446944d2875e7ba
 
-PODFILE CHECKSUM: 0c89146f77919ea9c26dfa7c36eeb4193dcc3bd5
+PODFILE CHECKSUM: 3dbd3a3b552e73fee570a8d0b2a80e4b79ed7f36
 
 COCOAPODS: 1.4.0

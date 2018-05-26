@@ -10,34 +10,135 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MapVC-->
+        <!--MaptouchVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MapVC" customModule="ActInSpaceOpenSpace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MaptouchVC" customModule="ActInSpaceOpenSpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJt-WZ-0Xo">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nH1-HO-Tk7" customClass="TransitionButton" customModule="TransitionButton">
+                                <rect key="frame" x="40" y="607" width="295" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PT2-F2-zy5"/>
+                                </constraints>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" red="0.99287670849999998" green="0.99700695279999996" blue="0.99637609719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zaB-tJ-0Mb"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="CJt-WZ-0Xo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Rx-cO-aQn"/>
-                            <constraint firstItem="CJt-WZ-0Xo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2f1-fx-gng"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CJt-WZ-0Xo" secondAttribute="bottom" id="2jE-Cy-rm6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CJt-WZ-0Xo" secondAttribute="trailing" id="8V7-H7-XGe"/>
+                            <constraint firstItem="nH1-HO-Tk7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WTL-HZ-D5c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nH1-HO-Tk7" secondAttribute="bottom" constant="20" id="lf5-2h-DTm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nH1-HO-Tk7" secondAttribute="trailing" constant="40" id="tIz-Tu-sGK"/>
+                            <constraint firstItem="nH1-HO-Tk7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="uE9-aw-nrT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="CJt-WZ-0Xo" id="GFm-ka-70Y"/>
+                        <outlet property="startButton" destination="nH1-HO-Tk7" id="qTU-cx-sMa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="49.925037481259373"/>
+        </scene>
+        <!--Sended AreaVC-->
+        <scene sceneID="TMF-2n-WQ9">
+            <objects>
+                <viewController restorationIdentifier="SendedAreaVC" storyboardIdentifier="SendedAreaVC" id="gwI-HE-ZIO" customClass="SendedAreaVC" customModule="ActInSpaceOpenSpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bdu-eV-Tkw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oH4-E9-OeF" customClass="M13Checkbox" customModule="M13Checkbox">
+                                <rect key="frame" x="123.5" y="279.5" width="128" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.99287670849999998" green="0.99700695279999996" blue="0.99637609719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="RQh-ev-h1l"/>
+                                    <constraint firstAttribute="width" constant="128" id="yy6-EB-eRf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="boxLineWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
+                                        <color key="value" red="0.46274509803921571" green="0.70196078431372544" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondaryCheckmarkTintColor">
+                                        <color key="value" red="0.46274509803921571" green="0.70196078431372544" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1C-hu-PXH">
+                                <rect key="frame" x="61.5" y="95" width="252" height="109.5"/>
+                                <string key="text">Your trusted zone 
+sent successfully</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <color key="textColor" red="0.99287670849999998" green="0.99700695279999996" blue="0.99637609719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9h-5T-1VC">
+                                <rect key="frame" x="40" y="552" width="295" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8VH-Ul-4oF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.99287670849999998" green="0.99700695279999996" blue="0.99637609719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.99287670849999998" green="0.99700695279999996" blue="0.99637609719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continueButtonHandler:" destination="gwI-HE-ZIO" eventType="touchUpInside" id="6Tk-xV-edE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45098039215686275" green="0.69803921568627447" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oH4-E9-OeF" firstAttribute="centerX" secondItem="0lf-Jw-Y7j" secondAttribute="centerX" id="JA1-Ub-AbZ"/>
+                            <constraint firstItem="P1C-hu-PXH" firstAttribute="top" secondItem="0lf-Jw-Y7j" secondAttribute="top" constant="75" id="YkH-7L-GcV"/>
+                            <constraint firstItem="oH4-E9-OeF" firstAttribute="centerY" secondItem="0lf-Jw-Y7j" secondAttribute="centerY" id="a7w-ey-fuZ"/>
+                            <constraint firstItem="n9h-5T-1VC" firstAttribute="leading" secondItem="0lf-Jw-Y7j" secondAttribute="leading" constant="40" id="aWO-84-pFt"/>
+                            <constraint firstItem="0lf-Jw-Y7j" firstAttribute="bottom" secondItem="n9h-5T-1VC" secondAttribute="bottom" constant="75" id="ife-Ju-E5T"/>
+                            <constraint firstItem="oH4-E9-OeF" firstAttribute="top" secondItem="P1C-hu-PXH" secondAttribute="bottom" constant="75" id="mJu-ws-20j"/>
+                            <constraint firstItem="0lf-Jw-Y7j" firstAttribute="trailing" secondItem="n9h-5T-1VC" secondAttribute="trailing" constant="40" id="uyb-Ni-1GI"/>
+                            <constraint firstItem="P1C-hu-PXH" firstAttribute="centerX" secondItem="0lf-Jw-Y7j" secondAttribute="centerX" id="yyP-6f-3gj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0lf-Jw-Y7j"/>
+                    </view>
+                    <connections>
+                        <outlet property="check" destination="oH4-E9-OeF" id="Ur4-dn-vE4"/>
+                        <outlet property="continueButton" destination="n9h-5T-1VC" id="JFD-nM-bdm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ol1-RR-Lxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.79999999999995" y="49.925037481259373"/>
         </scene>
     </scenes>
 </document>

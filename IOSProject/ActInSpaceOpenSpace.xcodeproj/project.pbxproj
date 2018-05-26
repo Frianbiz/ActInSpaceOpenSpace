@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		633CFBE5DEDE1228A2C6393C /* Pods_ActInSpaceOpenSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6601C187E6B93C80E2ABDC5 /* Pods_ActInSpaceOpenSpace.framework */; };
-		683F2F2C20B886F6007C1B51 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F2F2B20B886F6007C1B51 /* MapVC.swift */; };
+		6837FCFB20B89C2F00F92A78 /* CustomPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6837FCFA20B89C2F00F92A78 /* CustomPolyline.swift */; };
+		683F2F2C20B886F6007C1B51 /* MapLocVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F2F2B20B886F6007C1B51 /* MapLocVC.swift */; };
 		6854DC7620B87EB800D001D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6854DC7520B87EB800D001D6 /* AppDelegate.swift */; };
 		6854DC7B20B87EB800D001D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6854DC7920B87EB800D001D6 /* Main.storyboard */; };
 		6854DC7E20B87EB800D001D6 /* ActInSpaceOpenSpace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6854DC7C20B87EB800D001D6 /* ActInSpaceOpenSpace.xcdatamodeld */; };
@@ -16,6 +17,9 @@
 		6854DC8320B87EB900D001D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6854DC8120B87EB900D001D6 /* LaunchScreen.storyboard */; };
 		6854DC8E20B87EB900D001D6 /* ActInSpaceOpenSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6854DC8D20B87EB900D001D6 /* ActInSpaceOpenSpaceTests.swift */; };
 		6854DC9920B87EB900D001D6 /* ActInSpaceOpenSpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6854DC9820B87EB900D001D6 /* ActInSpaceOpenSpaceUITests.swift */; };
+		688058CD20B8F3AD00423AAF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688058CC20B8F3AD00423AAF /* UIView+Extension.swift */; };
+		68A55A2020B8CE7D00F387E4 /* MaptouchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A55A1F20B8CE7D00F387E4 /* MaptouchVC.swift */; };
+		68A55A2220B8E9DE00F387E4 /* SendedAreaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A55A2120B8E9DE00F387E4 /* SendedAreaVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,8 @@
 
 /* Begin PBXFileReference section */
 		5196691B52A3738148E4EFC9 /* Pods_ActInSpaceOpenSpaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActInSpaceOpenSpaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		683F2F2B20B886F6007C1B51 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		6837FCFA20B89C2F00F92A78 /* CustomPolyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPolyline.swift; sourceTree = "<group>"; };
+		683F2F2B20B886F6007C1B51 /* MapLocVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocVC.swift; sourceTree = "<group>"; };
 		683F2F2D20B890A3007C1B51 /* currentLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = currentLocation.gpx; sourceTree = "<group>"; };
 		683F2F2E20B894E8007C1B51 /* GpsiesTrack.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GpsiesTrack.gpx; sourceTree = "<group>"; };
 		6854DC7220B87EB800D001D6 /* ActInSpaceOpenSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActInSpaceOpenSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +58,9 @@
 		6854DC9420B87EB900D001D6 /* ActInSpaceOpenSpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActInSpaceOpenSpaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6854DC9820B87EB900D001D6 /* ActInSpaceOpenSpaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActInSpaceOpenSpaceUITests.swift; sourceTree = "<group>"; };
 		6854DC9A20B87EB900D001D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		688058CC20B8F3AD00423AAF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		68A55A1F20B8CE7D00F387E4 /* MaptouchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaptouchVC.swift; sourceTree = "<group>"; };
+		68A55A2120B8E9DE00F387E4 /* SendedAreaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendedAreaVC.swift; sourceTree = "<group>"; };
 		BAFFE3BE3902FA20B93134AB /* Pods_ActInSpaceOpenSpaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActInSpaceOpenSpaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4DBEA8BA1861E2050D2342 /* Pods-ActInSpaceOpenSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActInSpaceOpenSpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActInSpaceOpenSpace/Pods-ActInSpaceOpenSpace.release.xcconfig"; sourceTree = "<group>"; };
 		E6601C187E6B93C80E2ABDC5 /* Pods_ActInSpaceOpenSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActInSpaceOpenSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,9 +134,13 @@
 				6854DC8120B87EB900D001D6 /* LaunchScreen.storyboard */,
 				6854DC8420B87EB900D001D6 /* Info.plist */,
 				6854DC7C20B87EB800D001D6 /* ActInSpaceOpenSpace.xcdatamodeld */,
-				683F2F2B20B886F6007C1B51 /* MapVC.swift */,
+				683F2F2B20B886F6007C1B51 /* MapLocVC.swift */,
+				68A55A1F20B8CE7D00F387E4 /* MaptouchVC.swift */,
 				683F2F2D20B890A3007C1B51 /* currentLocation.gpx */,
 				683F2F2E20B894E8007C1B51 /* GpsiesTrack.gpx */,
+				6837FCFA20B89C2F00F92A78 /* CustomPolyline.swift */,
+				68A55A2120B8E9DE00F387E4 /* SendedAreaVC.swift */,
+				688058CC20B8F3AD00423AAF /* UIView+Extension.swift */,
 			);
 			path = ActInSpaceOpenSpace;
 			sourceTree = "<group>";
@@ -330,13 +342,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ActInSpaceOpenSpace/Pods-ActInSpaceOpenSpace-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -351,7 +367,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6854DC7E20B87EB800D001D6 /* ActInSpaceOpenSpace.xcdatamodeld in Sources */,
-				683F2F2C20B886F6007C1B51 /* MapVC.swift in Sources */,
+				688058CD20B8F3AD00423AAF /* UIView+Extension.swift in Sources */,
+				683F2F2C20B886F6007C1B51 /* MapLocVC.swift in Sources */,
+				68A55A2220B8E9DE00F387E4 /* SendedAreaVC.swift in Sources */,
+				6837FCFB20B89C2F00F92A78 /* CustomPolyline.swift in Sources */,
+				68A55A2020B8CE7D00F387E4 /* MaptouchVC.swift in Sources */,
 				6854DC7620B87EB800D001D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
